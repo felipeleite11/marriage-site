@@ -39,7 +39,8 @@ export const SlidesContainer = styled.div`
 			background-color: #fff9;
 			border-radius: 50%;
 			padding: 12px;
-			cursor: pointer;
+			transition: 300ms;
+			color: #626262;
 		}
 
 		&:hover {

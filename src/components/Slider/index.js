@@ -35,11 +35,11 @@ export default function() {
 			))}
 
 			<button id="go-left" onClick={prev}>
-				<FiChevronLeft size={30} />
+				<FiChevronLeft size={54} />
 			</button>
 
 			<button id="go-right" onClick={next}>
-				<FiChevronRight size={30} />
+				<FiChevronRight size={54} />
 			</button>
 
 		</SlidesContainer>
