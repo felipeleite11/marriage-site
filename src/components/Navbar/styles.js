@@ -45,6 +45,10 @@ export const MenuContainer = styled.div`
 		&:hover {
 			border-bottom: solid 2px #fff;
 		}
+
+		&.active {
+			border-bottom: solid 1px #ddd;
+		}
 	}
 
 	@media(max-width: 600px) {

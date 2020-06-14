@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Header, HeaderContent, Title, MainContent, TextContainer, PhotoContainer, LargeText } from './styles'
+import { MainContent, TextContainer, PhotoContainer, LargeText } from './styles'
 
 import heartHome from '../../assets/heart-home.svg'
 import loveKey from '../../assets/love-key.svg'
@@ -12,20 +12,15 @@ import casal3 from '../../assets/img/9.jpg'
 import casal4 from '../../assets/img/10.jpg'
 import casal5 from '../../assets/img/11.jpg'
 
+import Header from '../../components/Header'
 import BlockQuote from '../../components/BlockQuote'
 
 export default function () {
 	return (
 		<>
-			<Header>
-				<HeaderContent>
-					<Title className="animate__animated animate__fadeIn animate__slow">
-						Os noivos
-					</Title>
-				</HeaderContent>
-			</Header>
+			<Header title="Os noivos" />
 
-			<MainContent className="animate__animated animate__fadeIn animate__delay-1s">
+			<MainContent className="animate__animated animate__fadeIn">
 				<BlockQuote reference="Ec. 3:14">
 					Tudo quanto Deus faz, durará eternamente.
 				</BlockQuote>

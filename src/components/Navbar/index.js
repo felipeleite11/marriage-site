@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { FiMenu } from 'react-icons/fi'
 
 import { Navbar, MenuContainer } from './styles'
@@ -17,13 +17,15 @@ export default function () {
 		{ label: 'Recados', to: '/recados' }
 	]
 
+	const { pathname: currentRoute } = useLocation()
+
 	return (
 		<Navbar>
 			<FiMenu size={30} color="#fff" className="animate__animated animate__fadeInLeft animate__delay-3s" />
 
 			<MenuContainer>
 				{options.map(option => (
-					<Link key={option.label} to={option.to}>
+					<Link key={option.label} to={option.to} className={option.to === currentRoute ? 'active' : ''}>
 						{option.label}
 					</Link>
 				))}
