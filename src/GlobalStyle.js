@@ -8,10 +8,6 @@ export const GlobalStyles = createGlobalStyle`
 		src: url(${ChalisaOctavia}) format('opentype');
 	}
 
-	@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
-	@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-	@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400&display=swap');
-
   	.App {
 		text-align: center;
 		font-family: "Great Vibes";

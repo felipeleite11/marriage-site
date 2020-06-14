@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Footer = styled.footer`
-	font-family: "Open Sans", Roboto, Helvetica, sans-serif;
+	font-family: "Raleway", sans-serif;
 	width: 100%;
 	background-color: #d99199;
 	color: #fff;
