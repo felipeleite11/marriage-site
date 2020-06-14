@@ -31,12 +31,15 @@ export const SlidesContainer = styled.div`
 		width: 10%;
 		min-width: 72px;
 		height: 500px;
-		background: none;
+		background-color: #fff3;
 		outline: none;
 		transition: 300ms;
 
 		svg {
-			background-color: transparent;
+			background-color: #fff9;
+			border-radius: 50%;
+			padding: 12px;
+			cursor: pointer;
 		}
 
 		&:hover {

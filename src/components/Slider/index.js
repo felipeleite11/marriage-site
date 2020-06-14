@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 
 import { SlidesContainer } from './styles'
@@ -18,10 +18,15 @@ export default function() {
 	}, [offset, slides.length])
 
 	const next = useCallback(() => {
-		console.log(offset)
 		const isLastSlide = offset === -100 * (slides.length - 1)
 		setOffset(isLastSlide ? 0 : offset - 100)
 	}, [offset, slides.length])
+
+	useEffect(() => {
+		const interval = setInterval(next, 4000)
+
+		return () => clearInterval(interval)
+	}, [next])
 
 	return (
 		<SlidesContainer>

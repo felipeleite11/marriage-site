@@ -18,7 +18,11 @@ export default function () {
 			<Header title="Cerimônia e Festa" />
 
 			<MainContent className="animate__animated animate__fadeIn">
-				<img src={marker} alt="" className="icon animate__animated animate__fadeInUp animate__delay-1s" />
+				<img src={marker} alt="" className="icon animate__animated animate__fadeInUp animate__delay-1s" />,
+
+				<TextContainer>
+					<p style={{ textAlign: 'center' }}>...</p>
+				</TextContainer>
 
 				<img src={place} alt=""/>
 

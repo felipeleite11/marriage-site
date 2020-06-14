@@ -1,4 +1,13 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+const scale = keyframes`
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.06);
+	}
+`
 
 export const MainContent = styled.main`
 	width: 100%;
@@ -22,6 +31,10 @@ export const MainContent = styled.main`
 		&.icon {
 			width: 100px;
 			margin-bottom: 30px;
+		}
+
+		&.scalable {
+			animation: ${scale} 8s linear alternate infinite;
 		}
 
 		@media(max-width: 600px) {
@@ -54,8 +67,20 @@ export const PhotoContainer = styled.div`
 	grid-template-columns: 1fr 1fr;
 
 	img {
-		border-radius: ${props => props.rounded ? '50%' : '20%'};
+		border-radius: ${props => props.rounded ? '50% 5% 5% 5%' : '20%'};
 		width: 200px;
+
+		&:first-child {
+			border-radius: ${props => props.rounded ? '50% 5% 50% 5%' : '20%'};
+		}
+
+		&:last-child {
+			border-radius: ${props => props.rounded ? '5% 50% 5% 50%' : '20%'};
+		}
+	}
+
+	@media(max-width: 600px) {
+		grid-template-columns: ${props => props.forceGridTemplate ? '1fr 1fr' : '1fr'};
 	}
 `
 

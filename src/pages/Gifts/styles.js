@@ -3,10 +3,24 @@ import styled from 'styled-components'
 export const MainContent = styled.main`
 	width: 100%;
 	color: #424242;
+	padding-top: 50px;
+
+	> img {
+		border-radius: 10%;
+
+		&.icon {
+			width: 100px;
+		}
+
+		@media(max-width: 600px) {
+			width: 100%;
+			border-radius: 0;
+		}
+	}
 `
 
 export const TextContainer = styled.div`
-	margin: 60px 100px;
+	margin: 0 100px 60px;
 
 	p {
 		text-align: justify;

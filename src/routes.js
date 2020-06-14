@@ -8,6 +8,8 @@ import Gifts from './pages/Gifts'
 import GodParents from './pages/GodParents'
 import Demoiselles from './pages/Demoiselles'
 import Parents from './pages/Parents'
+import Presence from './pages/Presence'
+import Scraps from './pages/Scraps'
 
 export default function () {
 	return (
@@ -19,6 +21,9 @@ export default function () {
 			<Route path="/padrinhos" component={GodParents} />
 			<Route path="/demoiselles" component={Demoiselles} />
 			<Route path="/pais" component={Parents} />
+
+			<Route path="/presenca" component={Presence} />
+			<Route path="/recados" component={Scraps} />
 		</Switch>
 	)
 }

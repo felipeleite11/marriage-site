@@ -10,6 +10,8 @@ import regianne from '../../assets/img/regianne.jpg'
 import fulana from '../../assets/img/fulana.png'
 import beltrana from '../../assets/img/beltrana.png'
 
+import cake from '../../assets/cake.png'
+
 const godParents = [
 	{ image: helaiane, name: 'Helaiane' },
 	{ image: regianne, name: 'Regianne' },
@@ -27,6 +29,8 @@ export default function() {
 			<Header title="Padrinhos" />
 
 			<MainContent className="animate__animated animate__fadeIn">
+
+				<img src={cake} alt="" className="icon animate__animated animate__fadeInUp animate__delay-1s" />
 
 				<TextContainer className="animate__animated animate__fadeInUp animate__slow">
 					<p style={{ textAlign: 'center' }}>...</p>

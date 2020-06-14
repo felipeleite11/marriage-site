@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { FiMenu } from 'react-icons/fi'
+import { FiMenu, FiChevronLeft } from 'react-icons/fi'
 
 import { Navbar, MenuContainer } from './styles'
 
+import MobileMenu from '../MobileMenu'
+
 export default function () {
+	const [menuOpen, setMenuOpen] = useState(false)
+
 	const options = [
 		{ label: 'Home', to: '/' },
 		{ label: 'Os noivos', to: '/noivos' },
@@ -21,7 +25,20 @@ export default function () {
 
 	return (
 		<Navbar>
-			<FiMenu size={30} color="#fff" className="animate__animated animate__fadeInLeft animate__delay-3s" />
+			{React.createElement(menuOpen ? FiChevronLeft : FiMenu, {
+				style: { zIndex: 2, cursor: 'pointer' },
+				onClick: () => setMenuOpen(!menuOpen),
+				size: 30,
+				color: (menuOpen ? '#424242' : '#fff')
+			}, null)}
+			
+			<MobileMenu isOpen={menuOpen}>
+				{options.map(option => (
+					<Link key={option.label} to={option.to} onClick={() => setMenuOpen(false)}>
+						{option.label}
+					</Link>
+				))}
+			</MobileMenu>
 
 			<MenuContainer>
 				{options.map(option => (

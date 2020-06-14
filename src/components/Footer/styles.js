@@ -1,22 +1,11 @@
-import styled, { css } from 'styled-components'
-
-const striped = css`
-	background: repeating-linear-gradient(
-		-45deg,
-		#c97d85,
-		#c97d85 10px,
-		#d99199 10px,
-		#d99199 20px
-	);
-`
+import styled from 'styled-components'
 
 export const Footer = styled.footer`
 	font-family: "Open Sans", Roboto, Helvetica, sans-serif;
 	width: 100%;
 	background-color: #d99199;
-	color: #132043;
+	color: #fff;
 	padding-top: 30px;
-	/* ${striped} */
 `
 
 export const Content = styled.div`

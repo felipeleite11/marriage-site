@@ -21,7 +21,7 @@ export const MainContent = styled.main`
 
 		&.icon {
 			width: 100px;
-			margin-bottom: 30px;
+			margin-top: 40px;
 		}
 
 		@media(max-width: 600px) {

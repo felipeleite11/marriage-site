@@ -27,7 +27,7 @@ export default function () {
 
 				<img src={heartHome} alt="" className="icon animate__animated animate__fadeInUp animate__delay-1s" />
 
-				<PhotoContainer rounded>
+				<PhotoContainer rounded forceGridTemplate>
 					<img src={kat} alt=""/>
 					<img src={andre} alt=""/>
 				</PhotoContainer>
@@ -39,7 +39,7 @@ export default function () {
 
 				<img src={loveKey} className="icon" alt="" />
 
-				<img src={casal} alt="" />
+				<img src={casal} className="scalable" alt="" />
 
 				<LargeText>
 					Desde 2018.... para Sempre!!!
@@ -51,7 +51,6 @@ export default function () {
 					<img src={casal4} alt=""/>
 					<img src={casal5} alt=""/>
 				</PhotoContainer>
-
 			</MainContent>
 		</>
 	)

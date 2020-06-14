@@ -12,7 +12,7 @@ export const Navbar = styled.nav`
 		display: none;
 	}
 
-	@media(max-width: 600px) {
+	@media(max-width: 900px) {
 		justify-content: flex-start;
 		height: 60px;
 
@@ -51,7 +51,7 @@ export const MenuContainer = styled.div`
 		}
 	}
 
-	@media(max-width: 600px) {
+	@media(max-width: 900px) {
 		display: none;
 	}
 `
