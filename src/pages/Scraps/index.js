@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import Header from '../../components/Header'
 import Form from '../../components/Form'
 import Input from '../../components/Form/Input'
+import Toast from '../../components/Toast'
 
 import { MainContent, TextContainer } from './styles'
 
@@ -10,6 +11,7 @@ import baloon from '../../assets/love-baloon.svg'
 
 export default function() {
 	const [data, setData] = useState({ name: '', message: '' })
+	const [toast, setToast] = useState(null)
 
 	function handleChangeInput(event) {
 		const { name, value } = event.target
@@ -20,17 +22,35 @@ export default function() {
 		})
 	}
 
-	function handleSubmit(event) {
+	async function handleSubmit(event) {
 		event.preventDefault()
 
-		console.log(data)
+		document.querySelector('.submit-buttom').disabled = true
 
-		alert('Ok')
+		const { name, message } = data
 
-		setData({ name: '', message: '' })
+		try {
+			let formData = new FormData()
+			formData.append('table', 'scraps')
+			formData.append('name', name)
+			formData.append('message', message)
 
-		document.querySelector('input[name=name]').value = ''
-		document.querySelector('textarea[name=message]').value = ''
+			await fetch('http://painel.robot.rio.br/marriage.php', {
+				method: 'post',
+				body: formData,
+				mode: 'no-cors'
+			})
+
+			setToast({ message: 'Recado enviado!', type: 'success' })
+
+			setData({ name: '', message: '' })
+
+			document.querySelector('input[name=name]').value = ''
+			document.querySelector('textarea[name=message]').value = ''
+			document.querySelector('.submit-buttom').disabled = false
+		} catch(e) {
+			setToast({ message: 'Ocorreu um erro! Tente novamente.', type: 'error' })
+		}
 	}
 
 	return (
@@ -39,7 +59,7 @@ export default function() {
 
 			<MainContent className="animate__animated animate__fadeIn">
 
-				<img src={baloon} alt="" className="icon" />
+				<img src={baloon} alt="" className="icon animate__animated animate__fadeInUp animate__delay-1s" />
 			
 				<TextContainer className="animate__animated animate__fadeInUp animate__slow">
 					<p style={{ textAlign: 'center' }}>...</p>
@@ -50,8 +70,10 @@ export default function() {
 					<Input name="name" onChange={handleChangeInput} value={data.name} placeholder="Seu nome" />
 					<Input name="message" multiline onChange={handleChangeInput} value={data.message} placeholder="Sua mensagem" />
 
-					<button type="submit" onClick={handleSubmit}>Enviar</button>
+					<button type="submit" className="submit-buttom" onClick={handleSubmit}>Enviar</button>
 				</Form>
+
+				{toast && <Toast type={toast.type} onClose={() => setToast(null)}>{toast.message}</Toast>}
 
 			</MainContent>
 		</>

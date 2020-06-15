@@ -32,7 +32,7 @@ export default function({ children, isOpen = false }) {
 			) : (
 				<>
 					<img src={aliancas} alt="" className="animate__animated animate__jackInTheBox animate__slow" />
-					<p className="loading animate__animated animate__pulse animate__slow">Carregando...</p>
+					<p className="loading animate__animated animate__fadeIn animate__slow">Carregando...</p>
 				</>
 			)}
       	</Menu>

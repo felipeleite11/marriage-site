@@ -20,7 +20,7 @@ export const MainContent = styled.main`
 		border-radius: 10%;
 
 		&.icon {
-			width: 100px;
+			width: 75px;
 			margin-top: 40px;
 		}
 
