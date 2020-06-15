@@ -37,7 +37,7 @@ export default function() {
 			formData.append('phone', phone)
 			formData.append('email', email)
 
-			await fetch('http://painel.robot.rio.br/marriage.php', {
+			await fetch('https://painel.robot.rio.br/marriage.php', {
 				method: 'post',
 				body: formData,
 				mode: 'no-cors'
