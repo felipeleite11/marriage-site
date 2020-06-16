@@ -9,6 +9,8 @@ import MobileMenu from '../MobileMenu'
 export default function () {
 	const [menuOpen, setMenuOpen] = useState(false)
 
+	const token = sessionStorage.getItem('marriage-token')
+
 	const options = [
 		{ label: 'Home', to: '/' },
 		{ label: 'Os noivos', to: '/noivos' },
@@ -18,10 +20,17 @@ export default function () {
 		{ label: 'Padrinhos', to: '/padrinhos' },
 		{ label: 'Demoiselles', to: '/demoiselles' },
 		{ label: 'Aos pais', to: '/pais' },
-		{ label: 'Recados', to: '/recados' }
+		{ label: 'Recados', to: '/recados' },
+		{ label: token ? 'Sair' : 'Login', to: '/login' }
 	]
 
 	const { pathname: currentRoute } = useLocation()
+
+	function handleLoginClick() {
+		if(token) {
+			sessionStorage.removeItem('marriage-token')
+		}
+	}
 
 	return (
 		<Navbar>
@@ -42,7 +51,12 @@ export default function () {
 
 			<MenuContainer>
 				{options.map(option => (
-					<Link key={option.label} to={option.to} className={`hvr-sweep-to-top ${option.to === currentRoute ? 'active' : ''}`}>
+					<Link 
+						key={option.label} 
+						to={option.to}
+						onClick={handleLoginClick} 
+						className={`hvr-sweep-to-top ${option.to === currentRoute ? 'active' : ''}`}
+					>
 						{option.label}
 					</Link>
 				))}

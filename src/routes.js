@@ -10,7 +10,9 @@ import Demoiselles from './pages/Demoiselles'
 import Parents from './pages/Parents'
 import Presence from './pages/Presence'
 import Scraps from './pages/Scraps'
-// import Report from './pages/Report'
+import Login from './pages/Login'
+import Report from './pages/Report'
+
 
 export default function () {
 	return (
@@ -24,7 +26,8 @@ export default function () {
 			<Route path="/pais" component={Parents} />
 			<Route path="/presenca" component={Presence} />
 			<Route path="/recados" component={Scraps} />
-			{/* <Route path="/informacoes" component={Report} /> */}
+			<Route path="/login" component={Login} />
+			<Route path="/informacoes" component={Report} />
 		</Switch>
 	)
 }

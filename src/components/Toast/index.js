@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 
 import { Toast } from './styles'
 
-export default function({ children, type, onClose }) {
+export default function({ children, type, onClose, timeout = 1200, style }) {
 
 	useEffect(() => {
 		setTimeout(() => {
@@ -15,11 +15,11 @@ export default function({ children, type, onClose }) {
 				onClose()
 				toast.classList.remove('animate__bounceOut')
 			}, 1000)
-		}, 3000)
-	}, [onClose])
+		}, timeout)
+	}, [onClose, timeout])
 
 	return (
-		<Toast type={type}>
+		<Toast type={type} style={style}>
 			{children}
 		</Toast>
 	)
