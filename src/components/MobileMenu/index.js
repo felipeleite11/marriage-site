@@ -23,9 +23,9 @@ export default function({ children, isOpen = false }) {
 		<Menu isOpen={isOpen} className={`mobile-menu animate__animated ${!intro ? !isOpen ? 'animate__slideOutLeft' : 'animate__slideInLeft' : ''}`}>
 			{optionsVisible ? (
 				<>
-					<img src={drink} alt="" />
-
 					{children}
+
+					<img src={drink} alt="" />
 
 					<p>...</p>
 				</>

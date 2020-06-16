@@ -13,6 +13,7 @@ export const Menu = styled.div`
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
+	height: fit-content;
 
 	img {
 		width: 120px;
@@ -20,7 +21,7 @@ export const Menu = styled.div`
 	}
 	
 	a {
-		font-size: 30px;
+		font-size: 26px;
 		padding: 10px 16px;
 		width: 100%;
 		color: #888;
