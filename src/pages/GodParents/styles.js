@@ -49,19 +49,47 @@ export const TextContainer = styled.div`
 `
 
 export const PhotoContainer = styled.div`
+	margin: 0 100px;
+
+> div {
 	display: grid;
-	grid-gap: 20px;
-	grid-template-columns: repeat(4, 1fr);
-
-	@media(max-width: 1000px) {
-		grid-template-columns: repeat(3, 1fr);
-	}
-
-	@media(max-width: 800px) {
-		grid-template-columns: repeat(2, 1fr);
-	}
-
+	grid-gap: 0 20px;
+	grid-template-columns: 200px auto;
+	padding: 18px 0;
+	
 	@media(max-width: 600px) {
 		grid-template-columns: 1fr;
 	}
+
+	> span {
+		font-size: 14px;
+		font-family: 'Raleway', sans-serif;
+		text-align: left;
+		margin: 20px 50px;
+		line-height: 30px;
+		grid-column: 2;
+
+		@media(max-width: 600px) {
+			margin: 20px 0;
+			grid-column: 1;
+		}
+	}
+
+	> img {
+		grid-column: 1/3;
+		height: 21px;
+		justify-self: center;
+		opacity: 0.4;
+	}
+
+	> p {
+		font-size: 30px;
+		grid-column: 1/3;
+		margin: 0;
+	}
+}
+
+@media(max-width: 800px) {
+	margin: 0 26px;
+}
 `

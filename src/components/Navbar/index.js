@@ -42,7 +42,7 @@ export default function () {
 
 			<MenuContainer>
 				{options.map(option => (
-					<Link key={option.label} to={option.to} className={option.to === currentRoute ? 'active' : ''}>
+					<Link key={option.label} to={option.to} className={`hvr-sweep-to-top ${option.to === currentRoute ? 'active' : ''}`}>
 						{option.label}
 					</Link>
 				))}

@@ -5,7 +5,7 @@ export const Navbar = styled.nav`
 	height: 50px;
 	padding: 0 20px;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	align-items: center;
 
 	> svg {
@@ -42,12 +42,17 @@ export const MenuContainer = styled.div`
 		font-weight: lighter;
 		font-size: 14px;
 
-		&:hover {
-			border-bottom: solid 2px #fff;
-		}
-
 		&.active {
 			border-bottom: solid 1px #ddd;
+		}
+
+		&.hvr-sweep-to-top:before {
+			background: #fff;
+		}
+
+		&.hvr-sweep-to-top:focus,
+		&.hvr-sweep-to-top:hover{
+			color: #424242;
 		}
 	}
 
