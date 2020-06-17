@@ -11,7 +11,6 @@ import casal2 from '../../assets/img/8.jpg'
 import casal3 from '../../assets/img/9.jpg'
 import casal4 from '../../assets/img/10.jpg'
 import casal5 from '../../assets/img/11.jpg'
-import video from '../../assets/video.mp4'
 
 import Header from '../../components/Header'
 import BlockQuote from '../../components/BlockQuote'
@@ -46,10 +45,7 @@ export default function () {
 					O dia em que ela disse sim!
 				</LargeText>
 
-				<video controls>
-					<source src={video} type="video/mp4" />
-					Your browser does not support the video tag.
-				</video>
+				<iframe width="560" height="338" title="O dia em que ela disse SIM!" src="https://www.youtube.com/embed/y8Wt-IHta38" frameBorder="0" allow="accelerometer; encrypted-media; gyroscope" allowFullScreen></iframe>
 
 				<LargeText>
 					Desde 2018.... para Sempre!!!

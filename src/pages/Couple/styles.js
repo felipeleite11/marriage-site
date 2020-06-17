@@ -43,7 +43,7 @@ export const MainContent = styled.main`
 		}
 	}
 
-	> video {
+	> iframe {
 		width: 94%;
 		max-width: 600px;
 		border-radius: 12px;
