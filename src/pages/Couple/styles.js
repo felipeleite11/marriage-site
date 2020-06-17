@@ -42,6 +42,12 @@ export const MainContent = styled.main`
 			border-radius: 0;
 		}
 	}
+
+	> video {
+		width: 94%;
+		max-width: 600px;
+		border-radius: 12px;
+	}
 `
 
 export const TextContainer = styled.div`

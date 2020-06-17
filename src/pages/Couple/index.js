@@ -11,6 +11,7 @@ import casal2 from '../../assets/img/8.jpg'
 import casal3 from '../../assets/img/9.jpg'
 import casal4 from '../../assets/img/10.jpg'
 import casal5 from '../../assets/img/11.jpg'
+import video from '../../assets/video.mp4'
 
 import Header from '../../components/Header'
 import BlockQuote from '../../components/BlockQuote'
@@ -39,7 +40,16 @@ export default function () {
 
 				<img src={loveKey} className="icon" alt="" />
 
-				<img src={casal} className="scalable" alt="" />
+				{/* <img src={casal} className="scalable" alt="" /> */}
+
+				<LargeText>
+					O dia em que ela disse sim!
+				</LargeText>
+
+				<video controls>
+					<source src={video} type="video/mp4" />
+					Your browser does not support the video tag.
+				</video>
 
 				<LargeText>
 					Desde 2018.... para Sempre!!!

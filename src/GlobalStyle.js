@@ -31,6 +31,10 @@ export const GlobalStyles = createGlobalStyle`
 		box-sizing: border-box;
 	}
 
+	* {
+		outline: 0;
+	}
+
 	a {
 		color: #000;
 		text-decoration: none;
@@ -58,7 +62,6 @@ export const GlobalStyles = createGlobalStyle`
 	}
 
 	input, textarea {
-		outline: 0;
 		width: 100%;
 		border-radius: 6px;
 		padding: 10px;
