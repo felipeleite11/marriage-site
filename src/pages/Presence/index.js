@@ -59,7 +59,7 @@ export default function() {
 
 	return (
 		<>
-			<Header title="Área restrita" />
+			<Header title="Confirme sua presença" />
 
 			<MainContent className="animate__animated animate__fadeIn">
 
