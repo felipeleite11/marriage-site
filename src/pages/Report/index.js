@@ -23,9 +23,7 @@ export default function() {
 	})
 
 	useEffect(() => {
-		fetch('https://painel.robot.rio.br/marriage.php?table=presence', {
-			method: 'get'
-		})
+		fetch('https://painel.robot.rio.br/marriage.php?table=presence')
 		.then(response => response.json())
 		.then(response => {
 			setPresences(response)
@@ -33,9 +31,7 @@ export default function() {
 	}, [])
 
 	useEffect(() => {
-		fetch('https://painel.robot.rio.br/marriage.php?table=scraps', {
-			method: 'get'
-		})
+		fetch('https://painel.robot.rio.br/marriage.php?table=scraps')
 		.then(response => response.json())
 		.then(response => {
 			setScraps(response)

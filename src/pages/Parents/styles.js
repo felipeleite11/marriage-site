@@ -47,3 +47,18 @@ export const TextContainer = styled.div`
 		margin: 0 26px;
 	}
 `
+
+export const PhotoContainer = styled.div`
+	display: flex;
+	justify-content: space-around;
+	margin: 0 100px;
+
+	> div {
+		padding: 20px 50px;
+	}
+
+	@media(max-width: 700px) {
+		margin: 0 26px;
+		flex-direction: column;
+	}
+`

@@ -7,6 +7,7 @@ import { GlobalStyles } from './GlobalStyle'
 
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import Music from './components/Music'
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
         <Routes />
 
         <Footer />
+
+        <Music />
 
       </BrowserRouter>
     </div>

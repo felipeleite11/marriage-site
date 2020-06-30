@@ -6,7 +6,6 @@ import heartHome from '../../assets/heart-home.svg'
 import loveKey from '../../assets/love-key.svg'
 import andre from '../../assets/img/5.png'
 import kat from '../../assets/img/6.png'
-// import casal from '../../assets/img/7.jpg'
 import casal2 from '../../assets/img/8.jpg'
 import casal3 from '../../assets/img/9.jpg'
 import casal4 from '../../assets/img/10.jpg'
@@ -34,12 +33,12 @@ export default function () {
 
 				<TextContainer>
 					<p>Histórias de amor existem, e, às vezes, nem nós mesmos acreditamos que tudo aconteceu em tão pouco tempo. Porém, o brilho intenso e apaixonado dos nossos olhares nos fazem lembrar o porquê de chegarmos até aqui ....</p>
-					<p>Vamos nos casar! Estamos preparando tudo com muito carinho para curtirmos cada momento com nossos amigos e familiares queridos!</p>
+					<p>Nas primeiras trocas de mensagens cheias de risos já descobrimos que gostávamos os dois de quibe isso fez a gente levar em consideração que talvez fossemos alma gêmeas (rsrs) Na primeira saída só os dois pra almoçar caranguejo, não tinha caranguejo, mas teve uma conversa tão cheia de conexão que ali ela já sabia que "era ele"... Era ele com quem ela havia literalmente sonhado meses antes.</p>
+					<p>O André demorou um pouco mais pra ver que ali já tinha tudo traçado por Deus. Foi preciso meses de convivência e oração pro rapaz se preparar e enfim ter certeza que passaria o resto da vida ao lado dela. E glorificamos a Deus por cada período pré-namoro que vivemos, sendo amigos, nos conhecendo e fortalecendo a certeza que queríamos ser um casal. Desde o dia do nosso primeiro 'sim' lá em setembro de 2018 traçamos metas, oramos a Deus com propósito de nossa família se iniciar para glória dEle e fazermos um ao outro feliz!</p>
+					<p>Vamos nos casar! Nossa família irá começar e nada mais justo que celebrar toda essa felicidade ao lado das pessoas que amamos e viveram conosco cada fase e viverão essa nova que virá. Estamos preparando tudo com muito carinho para curtirmos cada momento com vocês nossos amigos e familiares queridos!</p>
 				</TextContainer>
 
 				<img src={loveKey} className="icon" alt="" />
-
-				{/* <img src={casal} className="scalable" alt="" /> */}
 
 				<LargeText>
 					O dia em que ela disse sim!

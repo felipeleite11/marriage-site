@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Couple from './pages/Couple'
 import Place from './pages/Place'
 import Gifts from './pages/Gifts'
+import Pajens from './pages/Pajens'
 import GodParents from './pages/GodParents'
 import Demoiselles from './pages/Demoiselles'
 import Parents from './pages/Parents'
@@ -21,6 +22,7 @@ export default function () {
 			<Route path="/noivos" component={Couple} />
 			<Route path="/local" component={Place} />
 			<Route path="/presentes" component={Gifts} />
+			<Route path="/pajens_daminhas" component={Pajens} />
 			<Route path="/padrinhos" component={GodParents} />
 			<Route path="/demoiselles" component={Demoiselles} />
 			<Route path="/pais" component={Parents} />

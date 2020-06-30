@@ -17,6 +17,7 @@ export default function () {
 		{ label: 'Local', to: '/local' },
 		{ label: 'Presentes', to: '/presentes' },
 		{ label: 'Confirme sua presença', to: '/presenca' },
+		{ label: 'Pajens e Daminhas', to: '/pajens_daminhas' },
 		{ label: 'Padrinhos', to: '/padrinhos' },
 		{ label: 'Demoiselles', to: '/demoiselles' },
 		{ label: 'Aos pais', to: '/pais' },

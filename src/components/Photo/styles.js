@@ -11,7 +11,6 @@ export const ImageContainer = styled.div`
 	img {
 		border-radius: ${props => props.rounded ? '50%' : '20%'};
 		width: 200px;
-		/* filter: grayscale(); */
 	}
 
 	span {
@@ -20,12 +19,7 @@ export const ImageContainer = styled.div`
 	}
 
 	&:hover {
-		cursor : pointer;
 		transform: scale(1.05);
-
-		img {
-			filter: unset;
-		}
 
 		span {
 			font-weight: 800;

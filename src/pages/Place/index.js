@@ -3,7 +3,7 @@ import React from 'react'
 import { MainContent, TextContainer, ClothesContainer, MapContainer } from './styles'
 
 import marker from '../../assets/love-marker.svg'
-import place from '../../assets/img/place-internal.jpeg'
+import place from '../../assets/img/place.png'
 import roupas from '../../assets/img/clothes2.png'
 
 import Header from '../../components/Header'
