@@ -53,8 +53,6 @@ export const Title = styled.h1`
 	flex-direction: column;
 	padding: 40px 0;
 	width: 100%;
-	/* border-top: solid 1px #fff; */
-	/* border-bottom: solid 1px #fff; */
 	/* background-image: linear-gradient(to right, #0001, #0006, #0001); */
 	background-image: linear-gradient(to right, #0001, #f003, #0001);
 

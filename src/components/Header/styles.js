@@ -46,5 +46,6 @@ export const Title = styled.h1`
 	border-bottom: solid 1px #fff;
 	padding: 40px 0;
 	width: 100%;
-	background: #0007;
+	/* background: #0007; */
+	background-image: linear-gradient(to right, #0001, #0006, #0001);
 `
