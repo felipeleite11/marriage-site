@@ -1,13 +1,13 @@
 import styled, { keyframes } from 'styled-components'
 
-import backgroundImage from '../../assets/img/1.png'
+import backgroundImage from '../../assets/img/background-home.jpg'
 
 const slide = keyframes`
 	from {
-		background-position: top left;
+		background-position: 25% 0%;
 	}
 	to {
-		background-position: top right;
+		background-position: 75% 0%;
 	}
 `
 
@@ -22,7 +22,7 @@ const pulse = keyframes`
 
 export const Header = styled.header`
 	background-blend-mode: saturation;
-	background-image: linear-gradient(black, black), url(${backgroundImage});
+	background-image: url(${backgroundImage});
 	background-repeat: no-repeat;
 	background-position: top left;
 	background-size: cover;
@@ -30,8 +30,8 @@ export const Header = styled.header`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	animation: ${slide} 15s linear alternate infinite;
 	margin-top: -60px;
+	animation: ${slide} 15s linear alternate infinite;
 `
 
 export const HeaderContent = styled.div`
@@ -39,6 +39,10 @@ export const HeaderContent = styled.div`
 	min-height: 400px;
 	padding: 100px 0 50px 0;
 	width: 90%;
+
+	@media(max-width: 600px) {
+		width: 100%;
+	}
 `
 
 export const Title = styled.h1`
@@ -47,10 +51,12 @@ export const Title = styled.h1`
 	margin: 50px 0;
 	display: flex;
 	flex-direction: column;
-	border-top: solid 1px #fff;
-	border-bottom: solid 1px #fff;
 	padding: 40px 0;
 	width: 100%;
+	/* border-top: solid 1px #fff; */
+	/* border-bottom: solid 1px #fff; */
+	/* background-image: linear-gradient(to right, #0001, #0006, #0001); */
+	background-image: linear-gradient(to right, #0001, #f003, #0001);
 
 	img {
 		height: 40px;

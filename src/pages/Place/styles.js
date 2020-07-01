@@ -18,13 +18,14 @@ export const MainContent = styled.main`
 	> img {
 		width: 65%;
 		border-radius: 10%;
+		max-width: 500px;
 
 		&.icon {
 			width: 85px;
 			margin-top: 40px;
 		}
 
-		@media(max-width: 600px) {
+		@media(max-width: 500px) {
 			width: 100%;
 			border-radius: 0;
 		}

@@ -6,10 +6,15 @@ import heartHome from '../../assets/heart-home.svg'
 import loveKey from '../../assets/love-key.svg'
 import andre from '../../assets/img/5.png'
 import kat from '../../assets/img/6.png'
-import casal2 from '../../assets/img/8.jpg'
-import casal3 from '../../assets/img/9.jpg'
-import casal4 from '../../assets/img/10.jpg'
-import casal5 from '../../assets/img/11.jpg'
+// import casal1 from '../../assets/img/8.jpg'
+// import casal2 from '../../assets/img/9.jpg'
+// import casal3 from '../../assets/img/10.jpg'
+// import casal4 from '../../assets/img/11.jpg'
+
+import casal1 from '../../assets/img/NOIVOS/1.jpg'
+import casal2 from '../../assets/img/NOIVOS/2.jpg'
+import casal3 from '../../assets/img/NOIVOS/3.jpg'
+import casal4 from '../../assets/img/NOIVOS/4.jpg'
 
 import Header from '../../components/Header'
 import BlockQuote from '../../components/BlockQuote'
@@ -51,10 +56,10 @@ export default function () {
 				</LargeText>
 
 				<PhotoContainer>
+					<img src={casal1} alt=""/>
 					<img src={casal2} alt=""/>
 					<img src={casal3} alt=""/>
 					<img src={casal4} alt=""/>
-					<img src={casal5} alt=""/>
 				</PhotoContainer>
 			</MainContent>
 		</>
