@@ -22,6 +22,8 @@ export default function() {
 
 				<TextContainer>
 					<p style={{ textAlign: 'center' }}>...</p>
+					<p>Sem dúvida a fofura e os suspiros de "ouunnn" estarão garantidos com a beleza dos sorrisos deles! Nossas crianças vocês sem dúvida trarão ao nosso cortejo mais da pureza e da presença de Deus... Alguns que acompanhamos  cada momento da vida, a gravidez, o nascimento e vários aniversários e até mesmo os que chegaram a menos tempo e já são tão importantes...</p>
+					<p>Queremos que tenham na lembrança de infância esse dia tão importante na vida da tia Kati e do tio André!</p>
 				</TextContainer>
 
 				<PhotoContainer className="animate__animated animate__fadeIn animate__slow animate__delay-1s">
