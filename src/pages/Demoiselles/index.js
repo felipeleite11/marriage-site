@@ -33,6 +33,10 @@ export default function() {
 
 				<TextContainer className="animate__animated animate__fadeInUp animate__slow">
 					<p>...</p>
+					<p>Às minhas queridas amigas,</p>
+					<p>Ao longo da minha vida sempre fui presenteada com pessoas que acrescentaram na minha história mais do que eu posso descrever em palavras nesse breve texto. Porém quero que sintam nessa escolha um pouco do amor, cuidado e irmandade que cada uma de vocês representa.</p>
+					<p>Uma a uma foram escolhidas para serem as que anunciarão a chegada da noiva durante a cerimônia e dizer ao mundo que ela deixou de ser solteira. Mas premanece sendo uma amiga que precisa do carinho e amizade vocês. </p>
+					<p>É com imensa gratidão a Deus por tudo que fizeram ao longo do tempo e por cada momento vivido, que nós confiamos a vocês esse lugar para testemunharem mais uma vez uma fase importante de nossas vidas!</p>
 				</TextContainer>
 
 				<PhotoContainer className="animate__animated animate__fadeIn animate__slow animate__delay-1s">
