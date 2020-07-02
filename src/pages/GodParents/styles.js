@@ -68,6 +68,7 @@ export const PhotoContainer = styled.div`
 		margin: 20px 50px;
 		line-height: 30px;
 		grid-column: 2;
+		text-align: justify;
 
 		@media(max-width: 600px) {
 			margin: 20px 0;
