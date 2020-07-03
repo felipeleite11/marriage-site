@@ -75,26 +75,30 @@ export const GlobalStyles = createGlobalStyle`
 		}
 	}
 
-	/* SCROLLBAR */
-	::-webkit-scrollbar {
-		width: 7px;
-		height: 7px;
+	@media(min-width: 600px) {
+		/* SCROLLBAR */
+		::-webkit-scrollbar {
+			width: 7px;
+			height: 7px;
+		}
+
+		/* Track */
+		::-webkit-scrollbar-track {
+			background: rgba(255, 255, 255, 0.2);
+			border-radius: 10px;
+		}
+
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+			background: rgba(0, 0, 0, 0.2); 
+			border-radius: 10px;
+		}
+
+		/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+			background: rgba(0, 0, 0, 0.4); 
+		}
 	}
 
-	/* Track */
-	::-webkit-scrollbar-track {
-		background: rgba(255, 255, 255, 0.2);
-		border-radius: 10px;
-	}
-
-	/* Handle */
-	::-webkit-scrollbar-thumb {
-		background: rgba(0, 0, 0, 0.2); 
-		border-radius: 10px;
-	}
-
-	/* Handle on hover */
-	::-webkit-scrollbar-thumb:hover {
-		background: rgba(0, 0, 0, 0.4); 
-	}
+	
 `

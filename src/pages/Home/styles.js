@@ -25,13 +25,17 @@ export const Header = styled.header`
 	background-image: url(${backgroundImage});
 	background-repeat: no-repeat;
 	background-position: top left;
-	background-size: cover;
+	background-size: 108% auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	margin-top: -60px;
-	animation: ${slide} 15s linear alternate infinite;
+	animation: ${slide} ${window.innerWidth > 800 ? 10 : 15}s linear alternate infinite;
+
+	@media(max-width: 800px) {
+		background-size: cover;
+	}
 `
 
 export const HeaderContent = styled.div`
@@ -53,7 +57,6 @@ export const Title = styled.h1`
 	flex-direction: column;
 	padding: 40px 0;
 	width: 100%;
-	/* background-image: linear-gradient(to right, #0001, #0006, #0001); */
 	background-image: linear-gradient(to right, #0001, #f003, #0001);
 
 	img {
