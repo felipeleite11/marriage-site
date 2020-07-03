@@ -26,7 +26,7 @@ export default function () {
 			marriageDate.setFullYear(marriageDate.getFullYear() + 1) 
 		}
 		
-		const result = Math.round(marriageDate.getTime() - today.getTime()) / oneDayDuration
+		const result = Math.round(marriageDate.getTime() - today.getTime()) / oneDayDuration + 1
 		
 		setRemaingDays(result.toFixed(0))
 	}, [marriageDate])
