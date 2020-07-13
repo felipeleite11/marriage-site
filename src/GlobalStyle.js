@@ -41,7 +41,9 @@ export const GlobalStyles = createGlobalStyle`
 		transition: all 300ms;
 	}
 
-	button {
+	button,
+	a.button {
+		height: fit-content;
 		border: none;
 		padding: 10px;
 		background-color: #C97D85;
@@ -49,6 +51,7 @@ export const GlobalStyles = createGlobalStyle`
 		border-radius: 6px;
 		transition: 300ms;
 		min-width: 160px;
+		font-family: 'Raleway', sans-serif;
 
 		&:hover {
 			opacity: 0.8;

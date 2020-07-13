@@ -40,7 +40,7 @@ export default function() {
 					<p style={{ textAlign: 'center' }}>...</p>
 					<p>Aos nossos queridos padrinhos,</p>
 					<p>A escolha dos padrinhos foi, sem dúvida, uma das missões mais difíceis. São muitas as pessoas que amamos e que queríamos ao nosso lado nesse momento.</p>
-					<p>Têm pessoas que não apenas participam das nossas vidas, mas também às completam. Existem amigos que são mais do que amigos, são irmãos... E têm irmãos que são muito mais do que irmãos, são anjos que Deus nos enviou para nos alegrarem e dividirem conosco cada momento de nossas vidas...</p>
+					<p>Tem pessoas que, não apenas participam das nossas vidas, mas também as completam. Existem amigos que são mais do que amigos, são irmãos... E tem irmãos que são muito mais do que irmãos, são anjos que Deus nos enviou para nos alegrarem e dividirem conosco cada momento de nossas vidas...</p>
 					<p>É uma emoção única e indescritível tê-los ao nosso lado e poder partilhar com vocês toda felicidade dessa nova etapa em nossas vidas: nosso casamento! Por isso, desejamos tê-los como testemunhas do nosso sonho e do nosso amor!</p>
 				</TextContainer>
 

@@ -37,9 +37,33 @@ export const GiftsContainer = styled.div`
 	height: 630px;
 	overflow-y: auto;
 	overflow-x: hidden;
+	display: flex;
+	justify-content: center;
+
+	.button {
+		display: none;
+
+		svg {
+			margin-left: 6px;
+		}
+	}
+
+	@media(max-width: 600px) {
+		height: 100px;
+
+		.button {
+			display: flex;
+			justify-content: center;
+			font-size: 24px !important;
+		}
+	}
 `
 
 export const Gifts = styled.iframe`
 	width: calc(100% + 20px);
 	height: 98.2%;
+
+	@media(max-width: 600px) {
+		display: none;
+	}
 `

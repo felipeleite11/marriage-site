@@ -25,7 +25,7 @@ export default function() {
 	async function handleSubmit(event) {
 		event.preventDefault()
 
-		document.querySelector('.submit-buttom').disabled = true
+		document.querySelector('.submit-button').disabled = true
 
 		const { name, message } = data
 
@@ -47,7 +47,7 @@ export default function() {
 
 			document.querySelector('input[name=name]').value = ''
 			document.querySelector('textarea[name=message]').value = ''
-			document.querySelector('.submit-buttom').disabled = false
+			document.querySelector('.submit-button').disabled = false
 		} catch(e) {
 			setToast({ message: 'Ocorreu um erro! Tente novamente.', type: 'error' })
 		}
@@ -70,7 +70,7 @@ export default function() {
 					<Input name="name" onChange={handleChangeInput} value={data.name} placeholder="Seu nome" />
 					<Input name="message" multiline onChange={handleChangeInput} value={data.message} placeholder="Sua mensagem" />
 
-					<button type="submit" className="submit-buttom" onClick={handleSubmit}>Enviar</button>
+					<button type="submit" className="submit-button" onClick={handleSubmit}>Enviar</button>
 				</Form>
 
 				{toast && <Toast type={toast.type} onClose={() => setToast(null)}>{toast.message}</Toast>}

@@ -13,7 +13,6 @@ const slide = keyframes`
 
 export const Header = styled.header`
 	background-blend-mode: saturation;
-	/* background-image: linear-gradient(black, black), url(${backgroundImage}); */
 	background-image: url(${backgroundImage});
 	background-repeat: no-repeat;
 	background-position: top left;
@@ -42,10 +41,7 @@ export const Title = styled.h1`
 	margin: 50px 0;
 	display: flex;
 	flex-direction: column;
-	border-top: solid 1px #fff;
-	border-bottom: solid 1px #fff;
 	padding: 40px 0;
 	width: 100%;
-	/* background: #0007; */
-	background-image: linear-gradient(to right, #0001, #0006, #0001);
+	background-image: linear-gradient(to right, #0001, #000A, #0001);
 `

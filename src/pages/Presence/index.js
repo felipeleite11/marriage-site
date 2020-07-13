@@ -26,7 +26,7 @@ export default function() {
 	async function handleSubmit(event) {
 		event.preventDefault()
 
-		document.querySelector('.submit-buttom').disabled = true
+		document.querySelector('.submit-button').disabled = true
 
 		const { name, phone, email } = data
 
@@ -50,7 +50,7 @@ export default function() {
 			document.querySelector('input[name=name]').value = ''
 			document.querySelector('input[name=phone]').value = ''
 			document.querySelector('input[name=email]').value = ''
-			document.querySelector('.submit-buttom').disabled = false
+			document.querySelector('.submit-button').disabled = false
 		} catch(e) {
 			console.log(e)
 			setToast({ message: 'Ocorreu um erro! Tente novamente.', type: 'error' })
@@ -75,7 +75,7 @@ export default function() {
 					<MaskedInput name="phone" onChange={handleChangeInput} value={data.phone} placeholder="Whatsapp para contato" mask={['(', /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]} />
 					<Input name="email" onChange={handleChangeInput} value={data.email} placeholder="E-mail para contato" />
 
-					<button type="submit" className="submit-buttom" onClick={handleSubmit}>Confirmar</button>
+					<button type="submit" className="submit-button" onClick={handleSubmit}>Confirmar</button>
 				</Form>
 
 				{toast && <Toast type={toast.type} onClose={() => setToast(null)}>{toast.message}</Toast>}

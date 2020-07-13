@@ -21,9 +21,9 @@ export default function() {
 				<TextContainer>
 					<p style={{ textAlign: 'center' }}>...</p>
 					<p>Queridos Pais,</p>
-					<p>Obrigado por terem nos ensinado a importância do amor à Deus e o respeito ao próximo através do exemplo diário da vida de vocês.</p>
-					<p>Por se fazerem tão presentes e necessários, nos ajudando gradativamente a sermos a pessoa que somos. Por serem a nossa luz nos momentos de indecisões, pelo espaço que ocupamos no coração e por tantos anos viverem em função das nossas vidas. Por serem os melhores pais que poderíamos ter. Pelo sim que disseram à Deus quando aceitaram ser nossos pais desde o primeiro momento em que viemos ao mundo. Vocês são um presente de Deus pra nós e agradecemos à Ele por ter nos dado pais maravilhosos.</p>
-					<p>E agora, vamos iniciar a construção de uma nova família, na qual pretendemos levar todos esses valores aprendidos. Por isso queremos que testemunhem o nosso amor e nos abençoem, diante de Deus.</p>
+					<p>Obrigado por terem nos ensinado a importância do amor a Deus e o respeito ao próximo através do exemplo diário da vida de vocês.</p>
+					<p>Por se fazerem tão presentes e necessários, nos ajudando gradativamente a sermos a pessoa que somos. Por serem a nossa luz nos momentos de indecisões, pelo espaço que ocupamos no coração e por tantos anos viverem em função das nossas vidas. Por serem os melhores pais que poderíamos ter. Pelo "sim" que disseram a Deus quando aceitaram ser nossos pais desde o primeiro momento em que viemos ao mundo. Vocês são um presente de Deus pra nós e agradecemos a Ele por ter nos dado pais maravilhosos.</p>
+					<p>E agora, vamos iniciar a construção de uma nova família, na qual pretendemos levar todos esses valores aprendidos. Por isso, queremos que testemunhem o nosso amor e nos abençoem, diante de Deus.</p>
 					<p>Amamos vocês!</p>
 					<p>Com carinho,</p>
 					<p>Katiane e André</p>
