@@ -47,6 +47,31 @@ export const TextContainer = styled.div`
 	p {
 		text-align: justify;
 		font-size: 30px;
+		font-family: 'Raleway', sans-serif;
+		font-weight: lighter;
+		font-size: 34px;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&.title > span {
+			font-size: 16px;
+		}
+
+		&.title > a {
+			color: #0084FE;
+		}
+
+		&.title + p {
+			font-size: 14px;
+
+			b {
+				margin-bottom: 10px;
+				font-weight: 700;
+				font-size: 20px;
+			}
+		}
 	}
 
 	img {

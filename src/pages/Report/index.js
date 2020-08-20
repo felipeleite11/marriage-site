@@ -47,7 +47,18 @@ export default function() {
 				<img src={clipboard} alt="" className="icon animate__animated animate__fadeInUp animate__delay-1s" />
 
 				<TextContainer className="animate__animated animate__fadeInUp animate__slow">
-					<p style={{ textAlign: 'center' }}>...</p>
+					<p>...</p>
+				</TextContainer>
+
+				<TextContainer className="animate__animated animate__fadeInUp animate__slow">
+					<p className="title">
+						Total em presentes
+						<span>(atualizado em 20/08/2020)</span>
+					</p>
+					<p>
+						<b>R$ 504,89</b>
+						<span>Apenas pagamentos confirmados.</span>
+					</p>
 				</TextContainer>
 			
 				<Table 
