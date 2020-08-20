@@ -25,11 +25,11 @@ import foto21 from '../../assets/img/SLIDER/Ensaio-21.jpg'
 import foto22 from '../../assets/img/SLIDER/Ensaio-22.jpg'
 import foto23 from '../../assets/img/SLIDER/Ensaio-23.jpg'
 
-const slides = [foto1, foto2, foto3, foto4, foto6, foto7, foto9, foto11, foto13, foto14, foto15, foto17, foto18, foto19, foto20, foto21, foto22, foto23]
+const slides = [foto1, foto2, foto3, foto4, foto6, foto7, foto9, foto11, foto13, foto14, foto15, foto17, foto18, foto19, foto20, foto21, foto22]
 
 // Adiciona as fotos que ficam adequadas apenas no desktop
 if(window.innerWidth >= 600) {
-	slides.push(foto5, foto8, foto12)
+	slides.push(foto5, foto8, foto12, foto23)
 }
 
 export default function() {
