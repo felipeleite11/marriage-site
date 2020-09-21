@@ -53,10 +53,10 @@ export default function() {
 				<TextContainer className="animate__animated animate__fadeInUp animate__slow">
 					<p className="title">
 						Total em presentes
-						<span>(atualizado em 20/08/2020)</span>
+						<span>(atualizado em 21/09/2020)</span>
 					</p>
 					<p>
-						<b>R$ 504,89</b>
+						<b>R$ 813,90</b>
 						<span>Apenas pagamentos confirmados.</span>
 					</p>
 				</TextContainer>
