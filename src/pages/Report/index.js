@@ -56,7 +56,7 @@ export default function() {
 						<span>(atualizado em 22/09/2020)</span>
 					</p>
 					<p>
-						<b>R$ 1.343,89</b>
+						<b>R$ 1.710,90</b>
 						<span>Apenas pagamentos confirmados.</span>
 					</p>
 				</TextContainer>
